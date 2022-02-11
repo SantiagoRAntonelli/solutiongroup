@@ -1,38 +1,340 @@
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(97deg, rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 35%, rgba(153, 153, 153, 1) 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-family: Helvetica Neue, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+  font-weight: lighter;
+  margin: 0
+}
+
 .App {
   text-align: center;
+  background: #3b3b3b !important;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    
+.col,
+.App-header{
+  align-items: center;
+  display: flex;
+  justify-content: center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background: #3b3b3b !important;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  min-height: 100vh
+}
+
+.app-logo {
+  width: 300px;
+  height: 80px;
+  margin: 30px auto;
+
+}
+
+.Text{
+  text-align: center;
+}
+
+.TextLi{
+  text-align: center;
+  text-decoration: underline white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+/*.fondo {
+  background: linear-gradient(45deg, #B73737, #221E7D) !important;
+}
+*/
+
+.col{
+  display: flex;
+  flex-wrap: inherit;
+}
+
+.sb-site-list {
+  list-style: none;
+  border: 2px solid #FFFFFF4F;
+  border-radius: 4px;
+  background-color: #FFFFFF4F;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-left: 0;
+  text-align: left;
+  display: flex;
+  flex-wrap: inherit;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb-site-sgAR {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  background-color: in;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+  
+}
+
+.sb-site-sgAR ::before{
+  background-image: url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/argentina.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgRD {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgRD ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/Republicadominicana.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgUSA {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgUSA ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/estadosunidos.png);
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+.sb-site-sgPa {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 5px;
+}
+
+.sb-site-sgPa ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/panama.png);
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgHK {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+
+}
+
+.sb-site-sgHK ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/hongkong.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+
+.sb-site-sgCR {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+
+}
+
+.sb-site-sgCR ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/costarica.png);
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgGt {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgGt ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/guatemala.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgSv {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgSv ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/elsalvador.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgHn {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgHn ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/honduras.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgPy {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgPy ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/paraguay.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-sgUr {
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  padding: 10px;
+  color: #333;
+  margin: 0 auto;
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.sb-site-sgUr ::before{
+  background-image:url(/home/developer/Desktop/Proyeto/solutiongroup/src/banderas/uruguay.png);
+  background-position: center;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  
+  }
+
+.sb-site-link {
+  background-color: inherit;
+  /*border-bottom: 1px dotted #CECECE;*/
+  display: block;
+  padding: 15px 18px 15px 55px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bolder;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sb-site-linklast {
+  background-color: inherit;
+  display: block;
+  padding: 15px 18px 15px 55px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
 }
